@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="Custom_From" translate="label" sortOrder="10">
+            <label>Custom From</label>
+        </tab>
+        <section id="kk_form" translate="label" sortOrder="15" showInDefault="1" showInWebsite="1" showInStore="1">
+            <class>separator-top</class>
+            <label>KK's Form</label>
+            <tab>Custom_From</tab><!-- tab id ane tab name sarkhu hovu joye  -->
+            <resource>KK_Form::config</resource>
+            <group id="general" translate="label" sortOrder="20" showInDefault="1" showInWebsite="1">
+
+                <label> KK's Custom Form </label>
+
+                <field id="is_active" translate="label comment" type="select" sortOrder="25" showInDefault="1"  showInWebsite="1">
+                    <label>Enable</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+
+            </group>
+        </section>
+    </system>
+</config>
+
+
+<!-- system.xml file that is used to specify configuration options in the Magento backend, which end users can in turn use to configure the module functionality -->

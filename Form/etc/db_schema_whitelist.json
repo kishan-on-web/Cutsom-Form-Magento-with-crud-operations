@@ -1,0 +1,15 @@
+{
+    "kk_custom_table": {
+        "column": {
+            "id": true,
+            "name": true,
+            "gender": true,
+            "email": true,
+            "status": true,
+            "feedback": true
+        },
+        "constraint": {
+            "PRIMARY": true
+        }
+    }
+}
